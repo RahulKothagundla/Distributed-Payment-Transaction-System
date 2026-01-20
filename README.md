@@ -46,8 +46,8 @@ Production-grade payment processing API with idempotency, fraud detection, and d
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/distributed-payment-system.git
-cd distributed-payment-system
+git clone https://github.com/RahulKothagundla/Distributed-Payment-Transaction-System.git
+cd dDistributed-Payment-Transaction-System
 ```
 
 ### 2. Setup Environment

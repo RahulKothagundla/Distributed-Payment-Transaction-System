@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 from typing import Optional, List
 from src.models.transaction import Transaction, TransactionStatus
 from src.services.payment_service import PaymentService
-from src.main import get_db
+from src.database import get_db
 import uuid
 
 router = APIRouter(prefix="/api/v1/transactions", tags=["transactions"])

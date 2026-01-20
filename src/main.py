@@ -1,16 +1,15 @@
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, Session
 from src.config import get_settings
 from src.models.transaction import Base
 from src.api import transactions
+from src.database import get_db  # NEW: Import from database module
 import logging
 
 settings = get_settings()
 
 # Database setup
 engine = create_engine(settings.database_url)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Create tables
 Base.metadata.create_all(bind=engine)
@@ -21,14 +20,6 @@ app = FastAPI(
     version=settings.app_version,
     description="Production-grade distributed payment processing system"
 )
-
-# Dependency
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 # Include routers
 app.include_router(transactions.router)
