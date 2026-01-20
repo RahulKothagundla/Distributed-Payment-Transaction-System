@@ -145,7 +145,7 @@ FAILED / CANCELLED
 - **Latency**: <50ms average response time
 - **Throughput**: 1000+ transactions/second
 - **Uptime**: 99.9% with health monitoring
-- **Test Coverage**: 87%
+- **Test Coverage**: 77%
 
 ## 🚀 Deployment
 
