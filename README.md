@@ -204,4 +204,4 @@ MIT License - see LICENSE file
 
 ---
 
-Built with ❤️ for Google Payments
+Built with ❤️
