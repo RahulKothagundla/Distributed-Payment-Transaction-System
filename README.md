@@ -106,7 +106,7 @@ pytest tests/test_transactions.py -v
 pytest --cov=src --cov-report=html
 ```
 
-**Current Test Coverage: 87%**
+**Current Test Coverage: 77%**
 
 ## 🔒 Security Features
 
